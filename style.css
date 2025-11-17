@@ -1,0 +1,447 @@
+html, body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titulo {
+    font-family: 'Viner Hand ITC', sans-serif;
+    color: #873C13;
+    font-size: 45px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    
+}
+
+.titulo:hover{
+    color: #DB7732;
+}
+
+.header-global{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 48px;
+    position: relative;
+    height: 85px;
+    
+}
+
+.header-derecha {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    margin-top: 50px;
+}
+
+.menu{
+    margin-top: 20px;
+}
+.form input[type="search"]{
+    margin-left: 20rem;
+    border-radius: 29px;
+    border: 2px solid #B05B2C;
+    width: 11vw;
+    height: 1.85vw;
+}
+.menu ul{
+    background-color: #C3A269;
+    gap: 200px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.menu a{
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+    color: white;
+    
+}
+
+.menu li{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 0;
+    
+}
+
+@media (max-width: 1024px) {
+    .header-global {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
+
+
+.fondo {
+    background-image: url("Portada.jpg");
+    background-size: cover;
+    height: 45rem;
+    padding-top: 0.5px;
+}
+
+.fa-magnifying-glass{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #873C13; /* color de la lupa */
+    padding: 5px;
+    width: 30px;
+}
+
+.fa-magnifying-glass:hover{
+    color: #9CF527;
+}
+
+.frase{
+    color: white;
+    font-size: 75px;
+    margin-top: 15px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10rem;
+    
+}
+
+.frase2{
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    
+}
+
+.frase3{
+    color: white;
+    font-size: 50px;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 10rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.libros1{
+    margin-top: 5rem;
+    padding-left: 2rem;
+}
+
+.recomendaciones{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #B14220;
+}
+
+
+.coleccion{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 4rem;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.card-libro{
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-libro img {
+    width: 100%; 
+    height: 350px;
+    object-fit: cover; 
+    margin-bottom: 0.5rem; 
+}
+
+
+.libro-titulo {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+.libro-autor {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+.libro-boton {
+    background-color: #B14220; 
+    color: white; 
+    padding: 10px 15px; 
+    text-decoration: none; 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    border-radius: 4px; 
+    margin-top: 10px; 
+    display: inline-block; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.libro-boton:hover {
+    background-color: #873C13; 
+}
+
+.libros2{
+    margin-top: 5rem;
+    padding-left: 2rem;
+}
+
+.Libros{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #B14220;
+}
+
+.coleccion2{
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 4rem;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.coleccion2 .card-libro2{
+    flex-shrink: 0;
+}
+
+.card-libro2{
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-libro2 img {
+    width: 100%; 
+    height: 350px;
+    object-fit: cover; 
+    margin-bottom: 0.5rem; 
+}
+
+.seccion-conocenos {
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;        
+    align-items: start;       
+    gap: 2rem;                 
+    margin-top: 5rem;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+
+.texto-conocenos {
+    flex: 2; 
+}
+
+.imagen-conocenos {
+    flex: 1;
+}
+
+
+.imagen-conocenos img {
+    width: 100%; 
+    height: auto;   
+    border-radius: 8px; 
+    padding-top: 1rem;
+    
+}
+
+.conocenos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #B14220;
+}
+
+.porque{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F87C63;
+    font-size: 20px;
+    padding-top: 1.5rem;
+    font-family: "Brygada 1918", serif;
+}
+
+.parrafo{
+    color: #9A9393;
+    font-size: 18px;
+    padding-top: 1.5rem;
+    text-align: justify;
+    font-family: "Brygada 1918", serif;
+}
+
+.parrafo2{
+    color: #9A9393;
+    font-size: 18px;
+    padding-top: 1.5rem;
+    text-align: justify;
+    font-family: "Brygada 1918", serif;
+}
+
+.parrafo3{
+    color: #9A9393;
+    font-size: 18px;
+    padding-top: 1.5rem;
+    text-align: justify;
+    font-family: "Brygada 1918", serif;
+}
+
+.parrafo4{
+    color: #B14220;;
+    font-size: 18px;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-family: "Brygada 1918", serif;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+    background-color: #C3A269;
+    height: 320px;
+    width: 100%
+}
+
+.titulo1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 0rem;
+    
+}
+.el-tunel{
+    padding-bottom: 5px;
+    border-bottom: 2.5px solid white;
+    margin-left: 2rem;
+}
+
+.el-tunel2{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.parrafo5{
+    font-family: "Brygada 1918", serif;
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.contacto {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.item-contacto {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  color: white;
+  font-family: "Brygada 1918", serif;
+}
+
+.redes{
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    
+}
+
+.redes a{
+font-size: 25px;
+
+}
+
+.titulo2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 0rem;
+}
+
+.menu2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.boton{
+    text-decoration: none;
+    color: white;
+    font-family: "Brygada 1918", serif;
+    font-size: 17px;
+}
+
+.cut{
+    margin-right: 2rem;
+}
+
+.correo-barra{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.boton-enviar{
+    background-color: orange;
+    padding: 3px 2px;
+    border-radius: 12px;
+}
+
+.recorrido{
+    animation-name: recorrido;
+    animation-duration: 3s;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes recorrido{
+
+    0%{
+        transform: rotate(0deg);
+        margin-left: 0px;
+    }
+
+    50%{
+        transform: rotateY(0deg);
+        margin-left: 500px;
+    }
+
+    100%{
+        transform: rotateX(0deg);
+        margin-left: 0px;
+    }
+}
